@@ -14,7 +14,7 @@ function My(){
       <div className='about-inner'>
 
         <div className='profile-card'>
-          <img src={profile} alt = '최용주 프로필사진'/>
+          <img src={profile} alt = '최용주 프로필사진' className='profile-img'/>
           <div className='profile-name'>최용주</div>
           <div className='profile-info'>
             <span><span className="icon">📞</span> 010-7369-4273</span>
@@ -23,7 +23,7 @@ function My(){
           </div>     
         </div>
 
-        <div className='about-detail'>
+        <div className='about-details'>
             {ContactList.map(({title, content}) => (
               <div className = 'detail-block' key = {title}>
               <h3>{title}</h3>
