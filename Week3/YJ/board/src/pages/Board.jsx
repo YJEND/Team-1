@@ -28,7 +28,7 @@ function Board() {
         <BoardForm addPost={addPost} /*posts={posts}*/ />
       </div>
 
-      <div className="List">
+      <div className="list">
         <h3>게시글 목록 영역 (BoardList)</h3>
         {posts.length === 0 ? (
           <ul>
