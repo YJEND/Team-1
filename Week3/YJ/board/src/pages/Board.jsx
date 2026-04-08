@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BoardForm } from "./components/BoardForm.jsx";
 import { BoardList } from "./components/BoardList.jsx";
 import { BoardItem } from "./components/BoardItem.jsx";
-
+import "../styles/Board.scss";
 
 function Board() {
   const [posts, setPosts] = useState([
@@ -20,15 +20,15 @@ function Board() {
     setPosts(filterPost);
   }
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="board">
       <h2>📝 자유 게시판</h2>
 
-      <div style={{ marginBottom: "20px", padding: "10px", border: "1px solid #ccc" }}>
+      <div className = "form">
         <h3>게시글 작성 영역 (BoardForm)</h3>
         <BoardForm addPost={addPost} /*posts={posts}*/ />
       </div>
 
-      <div style={{ padding: "10px", border: "1px solid #ccc" }}>
+      <div className="List">
         <h3>게시글 목록 영역 (BoardList)</h3>
         {posts.length === 0 ? (
           <ul>
