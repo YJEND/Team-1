@@ -1,0 +1,26 @@
+.board-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-title {
+  margin-bottom: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  color : #0e0202da
+}
+
+.item-content {
+  color: #bdbdbd;
+}
+
+.item-delete {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: red;
+    color : white;
+}
