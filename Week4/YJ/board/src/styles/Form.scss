@@ -1,0 +1,28 @@
+.board-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.board-title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.board-content {
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.board-submit {
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
