@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { BoardForm } from "./components/BoardForm.jsx";
 import { BoardList } from "./components/BoardList.jsx";
-import { BoardItem } from "./components/BoardItem.jsx";
 import "../styles/Board.scss";
+import BoardItem from "./components/BoardItem.jsx";
 
 function Board() {
   const [posts, setPosts] = useState([
@@ -19,6 +19,15 @@ function Board() {
     const filterPost = posts.filter((post) => post.id !== targetId)
     setPosts(filterPost);
   }
+
+ const updatePost = (targetId, nextContent) => {
+    setPosts(
+      posts.map((item) =>
+        item.id === targetId ? { ...item, content: nextContent } : item
+      )
+    );
+  };
+
   return (
     <div className="board">
       <h2>📝 자유 게시판</h2>
@@ -38,6 +47,9 @@ function Board() {
           <BoardList>
             {posts.map((post) => (
               <BoardItem key={post.id} post={post} deletePost = {deletePost}/>
+            ))}
+            {posts.map((post) => (
+              <BoardItem key={post.id} post={post} updatePost={updatePost} />
             ))}
           </BoardList>
         )}
