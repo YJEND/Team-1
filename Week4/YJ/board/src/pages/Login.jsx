@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-
+import "../styles/Login.scss";
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
