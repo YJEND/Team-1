@@ -1,9 +1,15 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+<<<<<<< HEAD
 import Login from './Login.jsx';
 import "../styles/SignUp.scss";
 
 function Signup() {
+=======
+import "../styles/SignUp.scss";
+
+function SignUp() {
+>>>>>>> refs/rewritten/recover
   const navigate = useNavigate();
 
   const [username, setUsername] = useState('');
@@ -78,7 +84,11 @@ function Signup() {
           <label className="signup-label">비밀번호</label>
           <input
             className="signup-input"
+<<<<<<< HEAD
             type= {showPassword ? "text" : "password"}
+=======
+            type={showPassword ? "text" : "password"}
+>>>>>>> refs/rewritten/recover
             placeholder="8자 이상, 영문+숫자"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -87,7 +97,11 @@ function Signup() {
             {showPassword ? '비밀번호 숨기기' : '비밀번호 보기'}
           </button>
           {password && !isPasswordValid && (
+<<<<<<< HEAD
             <p className = "signup-error">
+=======
+            <p className="signup-error">
+>>>>>>> refs/rewritten/recover
               비밀번호는 8자 이상, 영문+숫자로 입력해주세요.
             </p>
           )}
@@ -105,18 +119,30 @@ function Signup() {
             {showPassword ? '비밀번호 숨기기' : '비밀번호 보기'}
           </button>
             {confirmPassword && !isConfirmPasswordValid && (
+<<<<<<< HEAD
             <p className = "signup-error">
+=======
+            <p className="signup-error">
+>>>>>>> refs/rewritten/recover
               비밀번호가 일치하지 않습니다.
             </p>)}
             <button className="signup-submit" type="submit" disabled={!isFormValid}>
             가입하기
           </button>
         </form>
+<<<<<<< HEAD
         <p className = "signup-footer">이미 계정이 있나요? <Link to = "/login">로그인</Link></p>
+=======
+        <p className="signup-footer">이미 계정이 있나요? <Link to="/login">로그인</Link></p>
+>>>>>>> refs/rewritten/recover
       </div>
     </div>
   );
   
 }
 
+<<<<<<< HEAD
 export default Signup;
+=======
+export default SignUp;
+>>>>>>> refs/rewritten/recover
