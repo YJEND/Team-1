@@ -1,0 +1,87 @@
+.signupPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupContainer {
+  width: 360px;
+  text-align: center;
+}
+
+.signupTitle {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.signupDescription {
+  margin-bottom: 24px;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #6d6f7d;
+}
+
+.signupLabel {
+  font-size: 14px;
+  color: #9ca3bd;
+}
+
+.signupInput {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a4a4a;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+}
+
+.signupSubmit {
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.signupError {
+  font-size: 13px;
+  color: red;
+}
+
+.signupSubmit:disabled {
+  cursor: not-allowed;
+  background-color: rgb(125, 115, 115);
+}
+
+.passwordField {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #b7a0d8;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signupFooter {
+  margin-top: 16px;
+  text-align: center;
+  color: #8c8f9f;
+}
+
+.footerLink {
+  color: #b7a0d8;
+  text-decoration: none;
+}

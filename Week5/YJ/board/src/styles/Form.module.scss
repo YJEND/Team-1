@@ -1,0 +1,27 @@
+.boardForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.boardTitle {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.boardContent {
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.boardSubmit {
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
